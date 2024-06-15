@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="images/Appayon1.ico">
+    <title>
+        Appayon - Helping People in Need
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/Appayon1.png" alt="Appayon Logo">
+        <h1 class="animated-text" id="animatedText">Appayon</h1>
+        <p>Helping People in Need by Providing Food</p>
+    </header>
+    
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('services')">Services</a>
+        <a href="#" onclick="showSection('photos')">Photo Gallery</a>
+        <a href="#" onclick="showSection('comments')">Comments</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Welcome to Appayon</h2>
+            <p>We are dedicated to helping people in need by providing food. Our mission is to ensure that no one goes hungry.</p>
+        </section>
+        <section id="about" class="hidden">
+            <h2>About Us</h2>
+            <p>Appayon was founded with the belief that everyone deserves access to nutritious food. We work with local communities and volunteers to distribute meals to those in need.</p>
+        </section>
+        <section id="services" class="hidden">
+            <h2>Our Services</h2>
+            <div class="services">
+                <h3>Food Distribution</h3>
+                <p>We organize regular food drives and distribution events to provide meals to individuals and families in need.</p>
+            </div>
+            <div class="services">
+                <h3>Community Kitchens</h3>
+                <p>Our community kitchens offer hot meals to anyone who needs them, fostering a sense of community and support.</p>
+            </div>
+            <div class="services">
+                <h3>Volunteer Opportunities</h3>
+                <p>Join us as a volunteer to help with food collection, preparation, and distribution. Your support makes a big difference!</p>
+            </div>
+        </section>
+        <section id="photos" class="hidden">
+            <h2>Photo Gallery</h2>
+            <div class="photo-gallery">
+                <img src="images/img1.jpeg" alt="Appayon Event" class="gallery-photo">
+                <img src="images/img2.jpeg" alt="Appayon Event" class="gallery-photo">
+                <img src="images/img3.jpeg" alt="Appayon Event" class="gallery-photo">
+               
+            </div>
+        </section>
+        <section id="comments" class="hidden">
+            <h2>Leave a Comment</h2>
+            <form id="commentForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="commentMessage" style="color: green; display: none;">Thank you for your comment!</p>
+            <div id="commentList"></div>
+        </section>
+        <section id="contact" class="hidden">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to get involved, please reach out to us:</p>
+            <div class="contact">
+                <h3>Email</h3>
+                <p>info@appayon.org</p>
+            </div>
+            <div class="contact">
+                <h3>Phone</h3>
+                <p>(123) 456-7890</p>
+            </div>
+            <div class="contact">
+                <h3>Address</h3>
+                <p>123 Helping Hand Street, Kindness City, CA 12345</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Appayon. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
